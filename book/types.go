@@ -44,30 +44,30 @@ func main() {
 
 	for i := .0; ; i += .2 {
 		if i == 10. {
-			fmt.Println("i == 10 OK!")
+			fmt.Printf("i == 10 OK!, i - %.20f\n", i) // 10.19999999999999573674
 			break
 		} else if i > 10. {
-			fmt.Printf("i > 10 ERROR, i = %.6f\n", i)
+			fmt.Printf("i > 10 ERROR, i = %.20f\n", i)
 			break
 		}
 	}
 
 	for i := .0; ; i += .2 {
-		if math.Abs(2-i) < 2./2 {
-			fmt.Println("i == 10 OK!")
+		if math.Abs(10-i) < .2/2 {
+			fmt.Printf("i == 10 OK!, i - %.20f\n", i) // 9.99999999999999644729
 			break
 		} else if i > 10. {
-			fmt.Printf("i > 10 ERROR, i = %.6f\n", i)
+			fmt.Printf("i > 10 ERROR, i = %.20f\n", i)
 			break
 		}
 	}
 
 	for i := .0; ; i += .2 {
-		if i <= 2.+2./2 && i >= 2.-2./2 {
-			fmt.Println("i == 10 OK!")
+		if i <= 10.+.2/2 && i >= 10.-.2/2 {
+			fmt.Printf("i == 10 OK!, i - %.20f\n", i) // 9.99999999999999644729
 			break
 		} else if i > 10. {
-			fmt.Printf("i > 10 ERROR, i = %.6f\n", i)
+			fmt.Printf("i > 10 ERROR, i = %.20f\n", i)
 			break
 		}
 	}
