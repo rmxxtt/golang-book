@@ -44,10 +44,10 @@ func main() {
 
 	for i := .0; ; i += .2 {
 		if i == 10. {
-			fmt.Printf("i == 10 OK!, i - %.20f\n", i) // 10.19999999999999573674
+			fmt.Printf("i == 10 OK!, i - %.20f\n", i)
 			break
 		} else if i > 10. {
-			fmt.Printf("i > 10 ERROR, i = %.20f\n", i)
+			fmt.Printf("i > 10 ERROR, i = %.20f\n", i) // 10.19999999999999573674
 			break
 		}
 	}
