@@ -1,2 +1,2 @@
 # golang-book
-lern
+GO GO GO
