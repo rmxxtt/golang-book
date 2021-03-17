@@ -81,4 +81,7 @@ func main() {
 	fmt.Println("text[3] =", string(text[3]))
 	fmt.Println("len =", len(text))
 
+	// true
+	// false
+
 }
